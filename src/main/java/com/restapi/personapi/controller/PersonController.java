@@ -19,6 +19,18 @@ public class PersonController {
 
     private PersonService personService;
 
+    /*
+        @AllArgsConstructor(onConstructor = @__(@Autowired))
+
+        Substitui
+
+        @Autowired
+        public PersonController(PersonService personService)
+        {
+            this.personService = personService;
+        }
+     */
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public MessageResponseDTO createPerson(@RequestBody @Valid PersonDTO personDTO){

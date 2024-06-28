@@ -17,6 +17,18 @@ import java.util.stream.Collectors;
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PersonService {
 
+    /*
+        @AllArgsConstructor(onConstructor = @__(@Autowired))
+
+        Substitui
+
+        @Autowired
+        public PersonService(PersonRepository personRepository)
+        {
+            this.personRepository = personRepository;
+        }
+    */
+
     private PersonRepository personRepository;
     private final PersonMapper personMapper = PersonMapper.INSTANCE;
 
